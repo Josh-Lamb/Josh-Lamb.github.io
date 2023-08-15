@@ -10,7 +10,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.5s ease; /* Add gradient transition */
+    transition: background 0.5s ease;
 }
 
 .content-container {
@@ -26,14 +26,14 @@ body, html {
 .navbar-icons {
     display: flex;
     align-items: center;
-    justify-content: center; /* Add this line */
+    justify-content: center;
 }
 
 .navbar-icons a {
     margin-right: 10px;
-    color: #333; /* Change icon color as needed */
+    color: #333;
     text-decoration: none;
-    font-size: 18px; /* Adjust icon size as needed */
+    font-size: 18px;
 }
 
 .navbar-icons a:last-child {
@@ -92,8 +92,8 @@ body, html {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     flex: 2;
     margin-left: 20px;
-    max-height: calc(100vh - 80px);  /* Adjust as needed */
-    overflow-y: auto; /* Enable vertical scrolling if necessary */
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
 .project-section {
@@ -107,7 +107,7 @@ body, html {
 .blade-overlay {
     position: fixed;
     top: 0;
-    left: -300px; /* Start the blade off the screen */
+    left: -300px;
     width: 300px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -133,7 +133,7 @@ body, html {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
-    overflow-y: auto; /* Add scrollbar if content exceeds blade height */
+    overflow-y: auto;
 }
 
 #closeMenuButton {
@@ -148,16 +148,16 @@ body, html {
 #typingText {
     font-size: 36px;
     font-weight: bold;
-    margin-right: 20px; /* Add some spacing between text and button */
+    margin-right: 20px;
 }
 
 
 .typing-container {
     display: flex;
-    align-items: left; /* Center items vertically */
-    justify-content: left; /* Center items horizontally */
-    flex-direction: row; /* Place items in a row */
-    margin-top: 40px; /* Add some top margin for spacing */
+    align-items: left;
+    justify-content: left; 
+    flex-direction: row; 
+    margin-top: 40px; 
 }
 
 .blade-button {
@@ -176,10 +176,10 @@ body, html {
     border-bottom: 1px solid #ccc;
 }
 
-/* Media queries */
+
 @media (max-width: 1024px) {
     .navbar-container {
-        display: block; /* Show the navbar on smaller resolutions */
+        display: block;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
@@ -203,7 +203,7 @@ body, html {
     .main-box {
         flex: 1;
         margin-left: 0;
-        margin-top: 20px; /* Add spacing to the top */
+        margin-top: 20px;
     }
 
     .blade-button {
@@ -219,15 +219,15 @@ body, html {
     }
 
     .navbar {
-        display: none; /* Hide the normal navbar on smaller resolutions */
+        display: none; 
     }
 
     .blade-overlay {
-        left: 0; /* Bring the blade menu onto the screen */
+        left: 0; 
     }
 
     .main-box {
-        margin-left: 0; /* Adjust the margin for the main content */
+        margin-left: 0;
     }
 
 }
@@ -250,25 +250,22 @@ body, html {
 }
 
 
-/* Style the scrollbar */
+
 ::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
+    width: 10px; 
 }
 
-/* Style the scrollbar track */
 ::-webkit-scrollbar-track {
-    background: transparent; /* Set the background color of the track */
+    background: transparent; 
 }
 
-/* Style the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3); /* Set the color of the thumb */
-    border-radius: 130px; /* Round the edges of the thumb */
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 130px; 
 }
 
-/* Style the scrollbar thumb when hovering */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.5); /* Change the color on hover */
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 

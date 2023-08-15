@@ -73,7 +73,6 @@ closeMenuButton.addEventListener('click', () => {
 
 bladeOverlay.style.left = '-300px';
 window.addEventListener('resize', () => {
-    // Close the overlay if the window width goes beyond 768px (or any other desired threshold)
     if (window.innerWidth > 768) {
         bladeOverlay.style.left = '-300px';
     }
@@ -82,10 +81,7 @@ window.addEventListener('resize', () => {
 
 navButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Close the blade overlay
         bladeOverlay.style.left = '-300px';
-
-        // Scroll to the target project
         const target = button.getAttribute('data-target');
         const projectSection = document.getElementById(target);
         projectSection.scrollIntoView({ behavior: 'smooth' });
@@ -94,7 +90,7 @@ navButtons.forEach(button => {
 
 
 function typeText() {
-    typingText.innerHTML = ''; // Clear existing content
+    typingText.innerHTML = '';
     let index = 0;
     const typingInterval = setInterval(() => {
         if (index < textToType.length) {
@@ -103,32 +99,25 @@ function typeText() {
         } else {
             clearInterval(typingInterval);
         }
-    }, 100); // Adjust typing speed here (milliseconds)
+    }, 100);
 }
 
-// Call the typeText function after a delay
 setTimeout(() => {
     typeText();
-}, 1); // Adjust the delay time (milliseconds)
+}, 1);
 
-// Show the blade button on smaller resolutions
 function toggleBladeButton() {
     if (window.innerWidth <= 768) {
         bladeButton.style.display = 'block';
     } else {
         bladeButton.style.display = 'none';
-        closeBlade(); // Close the blade if it's open on larger resolutions
+        closeBlade();
     }
 }
 
-// Attach the toggleBladeButton function to window resize event
 window.addEventListener('resize', toggleBladeButton);
-
-// Initial check for the blade button visibility
 toggleBladeButton();
 
-
-// Easing function: Ease In Out Cubic
 function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
