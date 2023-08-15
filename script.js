@@ -9,6 +9,7 @@ const navButtons = document.querySelectorAll('.nav-buttons .nav-item');
 const textToType = "Joshua Lamb's Portfolio";
 const typingText = document.getElementById('typingText');
 const bladeButton = document.getElementById('bladeButton');
+const socialIcons = document.querySelector('.social-icons');
 
 const gradientColors = [
     { color: 'orange', position: 0 },

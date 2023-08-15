@@ -23,7 +23,45 @@ body, html {
     box-sizing: border-box;
 }
 
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line */
+}
 
+.navbar-icons a {
+    margin-right: 10px;
+    color: #333; /* Change icon color as needed */
+    text-decoration: none;
+    font-size: 18px; /* Adjust icon size as needed */
+}
+
+.navbar-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon:hover {
+    color: #ddd;
+}
 
 .navbar {
     background-color: white;
